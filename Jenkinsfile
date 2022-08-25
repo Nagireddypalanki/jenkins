@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent any
     stages {
         stage('Build') {
             steps {
@@ -7,6 +7,7 @@ pipeline {
                 sh "chmod +x -R ./helloworld.sh"
                 sh "./helloworld.sh"
             }
+          
         }
     }
 }
